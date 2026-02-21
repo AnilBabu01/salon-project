@@ -1,0 +1,596 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Satoshi-Variable-black';
+    src: url('./fonts/Satoshi-Black.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-Variable-Bold';
+    src: url('./fonts/Satoshi-Bold.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-Variable-Medium';
+    src: url('./fonts/Satoshi-Medium.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi-Variable-Regular';
+    src: url('./fonts/Satoshi-Regular.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'PlusJakartaSans-Regular';
+    src:url('./fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'PlusJakartaSans-Bold';
+    src:url('./fonts/PlusJakartaSans-Bold.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'PlusJakartaSans-Medium';
+    src:url('./fonts/PlusJakartaSans-Medium.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  .text-primary{
+    color:#D78B30;
+}
+
+.slick-dots li.slick-active div {
+    background-color: rgb(51, 51, 51) !important; /* Black color for the active dot */
+    border-color: rgb(51, 51, 51) !important; /* Ensure border matches the background */
+}
+.slick-dots li div {
+    background-color: #D9D9D9 !important; /* Black color for the active dot */
+    border-color: #D9D9D9 !important; /* Ensure border matches the background */
+}
+
+.slick-dots li {
+width: unset !important;
+}
+
+h2{
+    font-family: 'Satoshi-Variable-black';
+    font-size: 34px;
+    font-weight: 900;
+    color:#000000d9;
+}
+h3 {
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000d9;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+h4{
+    font-size: 18px;
+    line-height: 25px;
+    color:#000000d9;
+    font-weight: 700;
+}
+p{
+    font-family: 'PlusJakartaSans-Regular';
+    font-weight:400 ;
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.view-more {
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 21.6px;
+    color: #3F422E;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-color: #000;
+    padding: 14px 21px;
+}
+p,.distance{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color:#0000008c;
+}
+.searchbox input {
+    height: 47px;
+    border-radius: 50px;
+    border-color: #d7d7d7cc;
+    box-shadow: 0px 0px 6px #00000024;
+    background-color: #fff;
+    min-width: 390px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 43px;
+}
+.search-icon{
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    left: 14px;
+}
+.locationbox {
+    position: relative;
+}
+.locationbox img {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: 13px;
+}
+.locationbox select {
+    height: 47px;
+    border-color: #d7d7d7cc;
+    box-shadow: 0px 0px 6px #00000024;
+    min-width: 190px;
+    padding-left: 36px;
+    padding-right: 63px;
+}
+.cartbox .carticon.cart {
+    padding: 0px 25px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.cartbox .carticon{
+    font-weight: 600;
+    padding: 0px 6px;
+}
+nav{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/*FilterBar*/
+
+.filters{
+    padding:15px 0px;
+    border-bottom:1px solid #eee;
+}
+.filters button:hover{
+    color:#000;
+}
+.product-slider {
+    padding:47px 0px;
+}
+.product-box {
+    padding: 15px;
+    border:1px solid transparent;
+}
+.product-box:hover{
+    border:1px solid #C9C9C9;
+    border-radius: 15px;
+}
+
+.ratingbox {
+    position: absolute;
+    bottom: 10px;
+    background-color: #000000ba;
+    color: #fff;
+    padding: 8px 10px 5px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ffffff59;
+    right: 10px;
+}
+.ratingbox p {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.ratingbox img {
+    margin: 0 auto 0px;
+    width: 16px;
+}
+.img-badge {
+    position: absolute;
+    top: 20px;
+    background-color: #9E64EA;
+    color: #fff;
+    left: -6px;
+    padding: 0px 8px;
+}
+.male{
+    background-color: #20AFFF;
+}
+.female{
+    background-color: #FF217E;
+}
+
+
+/*Area Sec*/
+
+.area-sec {
+    padding-bottom: 100px;
+}
+.area-sec .headbox{
+    border-top:1px solid #eee;
+    padding-top:60px;
+}
+.product-box .imgbox > img{
+    width:100%;
+    margin-bottom: 13px;
+}
+
+/*Promo Seciton*/
+
+.promobox {
+    padding: 15px;
+    background-color: #c00000;
+    border-radius: 15px;
+    margin: 0px 10px;
+}
+.promobox h3,.promobox p{
+    color:#fff;
+}
+.promobox button.code-btn {
+    margin: 11px 0px;
+    background-color: #0000004d;
+    border: 0px;
+    font-size: 17px;
+    color: #fff;
+    padding: 10px 13px;
+}
+.promobox .dotted-line {
+    border-top: 1px dotted #fff;
+    padding-top: 16px;
+    position: relative;
+}
+
+.promobox .dotted-line button {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 11px;
+    border-radius: 9px;
+}
+.promobox .dotted-line::after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #f3f7fa;
+    border-radius: 100px;
+    right: -32px;
+    top: -15px;
+}
+.promobox .dotted-line::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #f3f7fa;
+    border-radius: 100px;
+    left: -32px;
+    top: -15px;
+}
+.promobox .innerbox {
+    padding: 11px 5px 0px;
+}
+.promobox .dotted-line .innerbox {
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+/*Partner*/
+
+.partnerbox {
+    background-color: #F5EBFF;
+    padding: 60px 30px 0px;
+    text-align: center;
+    border-radius: 32px;
+    position: relative;
+    min-height: 651px;
+    background-image: url('../app/assets/partner-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.partnerbox .max-width {
+    max-width: 500px;
+    margin: auto;
+}
+.partnerbox h3 {
+    font-size: 33px;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 16px;
+}
+.partnerbox p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.partnerbox button,.partnerbox button:hover {
+    background-color: #000;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px;
+    min-width: 226px;
+    border-radius: 14px;
+}
+.partnerbox img {
+    max-width: 321px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    display: table;
+    left: 0;
+    right: 0;
+}
+.affiliatebox{
+    background-color: #EDFFC6;
+}
+
+/*Faq*/
+
+.faq-sec{
+    padding:100px 16px;
+}
+.faq-sec p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.54px;
+}
+.faq-sec .accordian-outer h2 > button {
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 25px;
+}
+.faq-sec .accordian-outer p{
+        font-size: 16px;
+        line-height: 25px;
+}
+
+/*Concernbox*/
+
+.concern-sec{
+    padding-bottom: 90px;
+}
+.gradbox {
+    padding: 40px;
+    border-radius: 40px;
+}
+.gradbox h2 {
+    color: #fff;
+    margin-bottom: 9px;
+    font-size: 50px;
+}
+.formbox {
+    background-color: #0000004a;
+    padding: 30px;
+    border-radius: 15px;
+}
+.gradbox p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+}
+.gradbox .textbox {
+    display: flex;
+    flex-direction: column;
+    padding-top:60px;
+    justify-content: space-between;
+}
+.gradbox .bottombox p {
+    color: #ffffff78;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.gradbox .bottombox h4 {
+    font-size: 21px;
+    color: #fff;
+}
+.gradbox .bottombox .innerbox {
+    width: 50%;
+}
+.termtext {
+    padding: 0px 0px 20px;
+}
+.termtext p {
+    font-size: 11px;
+    line-height: 15px;
+    color: #ffffff7d;
+}
+.formbox button {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    border-radius: 11px;
+}
+.mapbox{
+    border:1px solid #eee;
+}
+
+/*Mapbox*/
+
+.contact-details h5 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000000d1;
+}
+.contact-details h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+.contact-details hr {
+    margin: 50px 40px;
+}
+.newsletter label {
+    text-align: left;
+    width: 100%;
+    left: 0;
+    color: #000000c7;
+}
+
+
+/*Required CSS*/
+
+
+header .carticon a{
+    font-family: 'Satoshi-Variable-bold';
+}
+nav {
+    padding-bottom: 1.3rem;
+}
+h5{
+    font-family: 'Satoshi-Variable-bold';
+}
+.product-box p{
+    font-family: 'Satoshi-Variable-Medium';
+}
+.mapbox h5{
+    font-family: 'Satoshi-Variable-Medium';
+}
+.review-sec h2{
+    font-family: 'Satoshi-Variable-Regular';
+}
+.rating-circle{
+    background-image: url('../app/assets/rating.png');
+    background-size: cover;
+    height: 131px;
+    width: 131px;
+}
+.rating-circle h2{
+    font-family: 'Satoshi-Variable-Bold';
+}
+
+.satoshi-bold{
+    font-family: 'Satoshi-Variable-bold';
+}
+.satoshi-medium{
+    font-family: 'Satoshi-Variable-Medium';
+}
+.satoshi-regular{
+    font-family: 'Satoshi-Variable-Regular';
+}
+
+.satoshi-black{
+font-family: 'Satoshi-Variable-black';
+}
+
+input:checked ~ .dot {
+    transform: translateX(70%);
+    background-color: #fff;
+  }
+  input:checked ~ .block{
+    background-color: #36A341;
+  }
+
+  .all-set{
+        background-image:url('../app/assets/all-set.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+  }
+
+/*tailwind*/
+.border-b {
+    border-bottom: 1px solid #eee;
+}
+.faq-sec .accordian-outer h2 > button svg {
+    width: 15px;
+}
+.cartbox{
+    order: 3;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    h2{
+        font-size: 26px;
+    }
+    .gradbox .bottombox .innerbox {
+        width: 100%;
+        margin-top: 19px;
+    }
+    .partnerbox h3 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .partnerbox p{
+        font-size: 14px;
+    }
+    .faq-sec .accordian-outer h2 > button{
+        text-align: left;
+        font-size: 16px;
+    }
+    .gradbox{
+        display: block;
+        padding: 26px;
+    }
+    .gradbox .textbox{
+        padding-top: 7px;
+    }
+    .gradbox h2{
+        font-size: 35px;
+    text-align: center;
+    }
+    .gradbox p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .gradbox .bottombox p{
+        text-align: left;
+        font-size: 16px;
+    }
+    .formbox{
+        margin-top: 25px;
+    }
+    .cartbox{
+        margin-top: 12px;
+    }
+    .cartbox .carticon.cart{
+        border-color: #fff;
+    }
+    .partnerbox img {
+        max-width: 251px;
+    }
+  }
+
+
+@layer base {
+  :root {
+        --radius: 0.5rem;
+    }
+}
+
+    
